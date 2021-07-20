@@ -281,7 +281,7 @@ Here's an example where we have an experimental "procedure" that depends on cond
                     "title": "Thank you!",
                     "text": "Thank you for participating in this study. Your child was in the "
                 },
-                "generateProperties": "function(expData, sequence, child, pastSessions, conditions) {if (conditions['1-study-procedure']['conditionNum'] == 0) {return {'debriefing': {'title': 'Thank you!', 'text': 'Your child was in the cats condition.'}};} else  {return {'debriefing': {'title': 'Thank you!', 'text': 'Your child was in the dogs condition.'}};} }"
+                "generateProperties": "function(expData, sequence, child, pastSessions, conditions) {if (conditions['0-study-procedure']['conditionNum'] == 0) {return {'debriefing': {'title': 'Thank you!', 'text': 'Your child was in the cats condition.'}};} else  {return {'debriefing': {'title': 'Thank you!', 'text': 'Your child was in the dogs condition.'}};} }"
             },
             "study-procedure": {
                 "sampler": "random-parameter-set",
